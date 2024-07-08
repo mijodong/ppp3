@@ -30,9 +30,11 @@
 *.exe
 *.out
 *.app
-# Ignore executables named 'drills' or 'exercise-*' in any subdirectory
+# Ignore executables named 'drills', 'exercise-*', 'trythis-*', or 'scratch' in any subdirectory
 */drills
 */exercise-*
+*/trythis-*
+*/scratch*
 
 # macOS debug files
 *.dSYM
@@ -40,3 +42,4 @@
 # Ensure we track the source files
 !*/drills.cpp
 !*/exercise-*.cpp
+!*/trythis-*.cpp
