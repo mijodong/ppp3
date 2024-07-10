@@ -42,6 +42,9 @@ namespace PPP
     public:
         using std::string::string;
 
+        // Adding this constructor for regular strings, code from Claude 3.5 Sonnet
+        Checked_string(const std::string &s) : std::string(s) {}
+
         char &operator[](size_t i)
         {
             std::cerr << "PPP::string::[]\n";
