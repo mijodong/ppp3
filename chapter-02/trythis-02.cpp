@@ -15,4 +15,6 @@ int main()
          << "\nthe remainder of half of n == " << n % 2
          << "\nsquare root of n == " << sqrt(n)
          << '\n';
+
+    return 0;
 }

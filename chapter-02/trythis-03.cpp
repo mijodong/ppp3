@@ -10,4 +10,6 @@ int main()
             cout << "repeated word: " << current << '\n';
         previous = current;
     }
+
+    return 0;
 }

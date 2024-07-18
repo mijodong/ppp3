@@ -50,4 +50,6 @@ int main()
 
     cout << "Yours sincerely,\n\n\n"
          << "MN\n";
+
+    return 0;
 }

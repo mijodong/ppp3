@@ -12,4 +12,6 @@ int main()
              << " c==" << c             // int value of char
              << " char(" << c << ")\n"; // the char
     }
+
+    return 0;
 }
