@@ -23,6 +23,8 @@ namespace PPP
     public:
         using std::vector<T>::vector;
 
+        Checked_vector(std::initializer_list<T> il) : std::vector<T>(il) {}
+
         T &operator[](size_t i)
         {
             std::cerr << "PPP::vector::[]\n";
