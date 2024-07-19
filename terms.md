@@ -29,3 +29,39 @@
 - **program**: A set of instructions that tells the computer what to do.
 - **source code**: Human readable code.
 - **statement**: Instructions written in code that performs a specific action (e.g., variable declaration, expression evaluation).
+
+
+## Chapter 2
+
+- **`++`**: Increment a variable by 1.
+- **`<`**: The less than operator symbol.
+- **`<=`**: The greater than OR equal to operator symbol.
+- **`!=`**: The not equal to operator symbol
+- **`=`**: The assignment operator symbol.
+- **`==`**: The is equal to operator symbol.
+- **`>`**: The greater than operator symbol.
+- **`>=`**: The greater than OR equal to operator symbol.
+- **`auto`**: Automatically assigns the type of the variable based on the initial value.
+- **`cin`**: Input stream from the standard library.
+- **`double`**: A data type that represents float numbers.
+- **`int`**: A data type that represents whole numbers.
+- **`string`**: A data type that represents an array of letters.
+- **assignment**: Giving value to a variable.
+- **concatenation**: Stringing independent values together with an operator.
+- **conversion**: Changing a variable from one data type to another.
+- **declaration**: A statement that gives a name and a type to an object.
+- **decrement**: Decrease the value by X.
+- **definition**: A statement that introduces a new name into a program and sets aside memory for a variable.
+- **increment**: Increase a variable by X.
+- **initialization**: Give a new variable a starting value.
+- **name**: What we give to variables to call them, they start with a letter and contain only letters, digits, and underscores.
+- **narrowing**: Converting a variable's data type to a smaller data type.
+- **object**: A region of memory with a type that specifies what kind of information can be placed in it. Named objects are variables.
+- **operation**: An action applied to an input to get an output using operators.
+- **operator**: Acts upon objects to compare/assign values and complete operations.
+- **truncation**: When a narrowing conversion rounds down the original value.
+- **type**: Defines the properties of the variable and the functions/operations that can be applied to it.
+- **type safety**: A feature of programming languages that enforce objects to only use functions/operations applicable to it's type.
+- **value**: The data assigned to an object.
+- **variable**: A named object with a specific type.
+- **widening**: Converting a variable's data type to a bigger data type.
