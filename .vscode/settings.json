@@ -2,6 +2,18 @@
     "files.associations": {
         "*.mdx": "markdown",
         "iostream": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "array": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "optional": "cpp",
+        "set": "cpp",
+        "string_view": "cpp",
+        "tuple": "cpp",
+        "unordered_map": "cpp",
+        "variant": "cpp",
+        "vector": "cpp",
+        "cstddef": "cpp",
+        "ostream": "cpp"
     }
 }
