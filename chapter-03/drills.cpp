@@ -2,8 +2,8 @@
 
 int main()
 {
-    // Drill 3
-    int i, j;
+    // Drill 4
+    double i, j;
     while (cin >> i >> j)
     {
         if (i < j)
