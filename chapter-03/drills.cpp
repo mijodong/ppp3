@@ -2,11 +2,20 @@
 
 int main()
 {
-    // Drill 1
+    // Drill 2
     int i, j;
     while (cin >> i >> j)
     {
-        cout << i << " " << j << '\n';
+        if (i < j)
+        {
+            cout << "The smaller value is: " << i << '\n';
+            cout << "The larger value is: " << j << '\n';
+        }
+        else
+        {
+            cout << "The smaller value is: " << j << '\n';
+            cout << "The larger value is: " << i << '\n';
+        }
     }
 
     return 0;
