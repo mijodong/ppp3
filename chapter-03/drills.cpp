@@ -2,28 +2,27 @@
 
 int main()
 {
-    // Drill 5
-    double i, j;
-    while (cin >> i >> j)
+    // Drill 6
+    double i;
+    double smallest = 999999999999999;
+    double largest = -999999999999999;
+
+    while (cin >> i)
     {
-        if (i < j)
+        cout << i;
+        if (i < smallest)
         {
-            cout << "The smaller value is: " << i << '\n';
-            cout << "The larger value is: " << j << '\n';
-            if (abs(j - i) < 1.0 / 100)
-                cout << "The numbers are almost equal!" << '\n';
+            smallest = i;
+            cout << " is the smallest so far";
         }
-        else if (j < i)
+        if (i > largest)
         {
-            cout << "The smaller value is: " << j << '\n';
-            cout << "The larger value is: " << i << '\n';
-            if (abs(i - j) < 1.0 / 100)
-                cout << "The numbers are almost equal!" << '\n';
+            if (i == smallest)
+                cout << " and also";
+            largest = i;
+            cout << " is the largest so far";
         }
-        else
-        {
-            cout << "The inputs are equal." << '\n';
-        }
+        cout << '\n';
     }
 
     return 0;
