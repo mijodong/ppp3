@@ -2,7 +2,7 @@
 
 int main()
 {
-    // Drill 2
+    // Drill 3
     int i, j;
     while (cin >> i >> j)
     {
@@ -11,10 +11,14 @@ int main()
             cout << "The smaller value is: " << i << '\n';
             cout << "The larger value is: " << j << '\n';
         }
-        else
+        else if (j < i)
         {
             cout << "The smaller value is: " << j << '\n';
             cout << "The larger value is: " << i << '\n';
+        }
+        else
+        {
+            cout << "The inputs are equal." << '\n';
         }
     }
 
