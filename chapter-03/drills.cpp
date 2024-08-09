@@ -2,7 +2,7 @@
 
 int main()
 {
-    // Drill 10
+    // Drill 11
     constexpr double cm_per_m = 100;
     constexpr double cm_per_in = 2.54;
     constexpr double in_per_ft = 12;
@@ -111,6 +111,7 @@ int main()
     cout << smallest_as_m_sum << "m is the sum of all of the smallest inputs\n";
     cout << largest_as_m_sum << "m is the sum of all of the largest inputs\n";
 
+    ranges::sort(i_values);
     cout << "\nAll entries as meters: \n";
 
     for (double x : i_values)
