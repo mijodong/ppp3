@@ -2,7 +2,7 @@
 
 int main()
 {
-    // Drill 9
+    // Drill 10
     constexpr double cm_per_m = 100;
     constexpr double cm_per_in = 2.54;
     constexpr double in_per_ft = 12;
@@ -20,6 +20,7 @@ int main()
     string uom;
     string smallest_uom;
     string largest_uom;
+    vector<double> i_values;
 
     while (cin >> i >> uom)
     {
@@ -93,6 +94,7 @@ int main()
             }
 
             i_as_m_sum += i_as_m;
+            i_values.push_back(i_as_m);
             ++i_inputs;
         }
         else
@@ -108,6 +110,11 @@ int main()
     cout << i_as_m_sum << "m is the sum of all valid inputs\n";
     cout << smallest_as_m_sum << "m is the sum of all of the smallest inputs\n";
     cout << largest_as_m_sum << "m is the sum of all of the largest inputs\n";
+
+    cout << "\nAll entries as meters: \n";
+
+    for (double x : i_values)
+        cout << x << "m\n";
 
     return 0;
 }
