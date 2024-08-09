@@ -2,7 +2,7 @@
 
 int main()
 {
-    // Drill 7
+    // Drill 8
     constexpr double cm_per_m = 100;
     constexpr double cm_per_in = 2.54;
     constexpr double in_per_ft = 12;
@@ -19,62 +19,70 @@ int main()
 
     while (cin >> i >> uom)
     {
-        cout << i << " " << uom;
+        if (uom == "cm" || uom == "m" || uom == "in" || uom == "ft")
+        {
 
-        // convert input to m as a base comparison value
-        if (uom == "cm")
-        {
-            i_as_m = i / cm_per_m;
-        }
-        else if (uom == "in")
-        {
-            i_as_m = i * cm_per_in / cm_per_m;
-        }
-        else if (uom == "ft")
-        {
-            i_as_m = i * in_per_ft * cm_per_in / cm_per_m;
-        }
-        else
-        {
-            i_as_m = i;
-        }
+            cout << i << " " << uom;
 
-        // check if smallest
-        if (smallest_uom != "")
-        {
-            if (i_as_m < smallest_as_m)
+            // convert input to m as a base comparison value
+            if (uom == "cm")
+            {
+                i_as_m = i / cm_per_m;
+            }
+            else if (uom == "in")
+            {
+                i_as_m = i * cm_per_in / cm_per_m;
+            }
+            else if (uom == "ft")
+            {
+                i_as_m = i * in_per_ft * cm_per_in / cm_per_m;
+            }
+            else
+            {
+                i_as_m = i;
+            }
+
+            // check if smallest
+            if (smallest_uom != "")
+            {
+                if (i_as_m < smallest_as_m)
+                {
+                    smallest = i;
+                    smallest_uom = uom;
+                    smallest_as_m = i_as_m;
+                    cout << " is the smallest so far";
+                }
+            }
+            else
             {
                 smallest = i;
                 smallest_uom = uom;
                 smallest_as_m = i_as_m;
                 cout << " is the smallest so far";
             }
-        }
-        else
-        {
-            smallest = i;
-            smallest_uom = uom;
-            smallest_as_m = i_as_m;
-            cout << " is the smallest so far";
-        }
 
-        // check if largest
-        if (largest_uom != "")
-        {
-            if (i_as_m > largest_as_m)
+            // check if largest
+            if (largest_uom != "")
+            {
+                if (i_as_m > largest_as_m)
+                {
+                    largest = i;
+                    largest_uom = uom;
+                    largest_as_m = i_as_m;
+                    cout << " is the largest so far";
+                }
+            }
+            else
             {
                 largest = i;
                 largest_uom = uom;
                 largest_as_m = i_as_m;
-                cout << " is the largest so far";
+                cout << " and is also the largest so far";
             }
         }
         else
         {
-            largest = i;
-            largest_uom = uom;
-            largest_as_m = i_as_m;
-            cout << " and is also the largest so far";
+            cout << uom << " is an illegal unit. Please enter a legal unit: cm, m, in, or ft\n";
         }
 
         cout << '\n';
